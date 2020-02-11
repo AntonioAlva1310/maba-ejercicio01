@@ -235,7 +235,6 @@ i {
     display: block;
     color: #FFC815;
     text-align: center;
-   
 }
 
 .icon-laptop:before {
@@ -243,13 +242,60 @@ i {
 }
 
 .cuadro-servicio:hover {
-    
     background-color: white;
     color: grey;
-    transition: all 0.5s cubic-bezier(.46,.08,.29,.86) 0s;
+    transition: all 0.5s cubic-bezier(.46, .08, .29, .86) 0s;
 }
 
- 
 .cuadro-servicio:hover h2 {
     color: grey;
-} 
+}
+
+
+/* TAREA DOS  */
+
+.base-portada {
+    background-color: black;
+    height: 500px;
+    width: 100%;
+    /* position: relative; */
+}
+
+.portada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url(tarea2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+}
+
+.continuacion-portada{
+    background-color: black;
+    height: 500px;
+    width: 100%;
+    position: relative;
+
+}
+
+.portada h2 {
+  font-size: 50px;
+  color: white;
+  
+}
+
+.portada::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffd40061;
+    z-index:-1;
+}
